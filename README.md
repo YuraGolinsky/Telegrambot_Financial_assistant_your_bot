@@ -1,5 +1,9 @@
 Telegrambot_Financial_assistant_your_bot
 
+Бот помогает управлять финансами, отслеживая доходы, расходы, балансы и сбережения. Включает функции просмотра еженедельных, ежемесячных и годовых финансовых данных, а также позволяет пользователям управлять своим профилем с личными данными и фотографией. Все данные хранятся в формате JSON.
+
+The bot helps manage finances by tracking income, expenses, balances, and savings. Includes features for viewing weekly, monthly, and yearly financial data, and allows users to manage their profile with personal data and a photo. All data is stored in JSON format.
+
 ![image](https://github.com/user-attachments/assets/ff9346b6-6f1c-4ff1-8024-9ad0586e082a)
 
 
