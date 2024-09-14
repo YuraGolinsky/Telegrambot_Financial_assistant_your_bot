@@ -2,67 +2,70 @@ Telegrambot_Financial_assistant_your_bot
 
 ![image](https://github.com/user-attachments/assets/ff9346b6-6f1c-4ff1-8024-9ad0586e082a)
 
-1. Регистрация и Вход:
-   - Убедитесь, что пароли сохраняются безопасно. Возможно, стоит рассмотреть использование хэширования паролей для повышения безопасности.
-   - Добавьте возможность восстановления пароля, если это необходимо.
 
-2. Финансовые Ресурсы:
-   - Добавьте возможность редактировать или удалять данные, чтобы пользователи могли исправлять ошибки.
-   - Рассмотрите возможность визуализации данных (графики, диаграммы), чтобы пользователи могли лучше понимать свои финансы.
+1. /start: Приветственное сообщение с кнопками для регистрации и входа в систему.
 
-3. Накопления:
-   - Реализуйте функционал редактирования и удаления накоплений, чтобы пользователи могли управлять своими целями.
-   - Добавьте напоминания о целях накоплений, чтобы пользователи могли отслеживать их выполнение.
+2. Регистрация и вход:
+   - Пользователи могут зарегистрироваться, предоставив имя пользователя и пароль.
+   - После регистрации пользователи могут войти, используя свои учетные данные.
 
-4. Профиль:
-   - Позвольте пользователям изменять свои данные (например, имя, фотографию профиля) через бота.
-   - Рассмотрите возможность добавления профиля пользователя с дополнительной информацией, такой как возраст или местоположение.
+3. Главное меню:
+   - Финансовые ресурсы: Пользователи могут добавить и просмотреть данные о доходах, расходах и общую сумму. Также могут сохранять и просматривать финансовые данные.
+   - Финансовые накопления: Пользователи могут добавлять, просматривать, редактировать и удалять карточки накоплений.
+   - Настройки профиля: Пользователи могут обновлять свои данные профиля и изменять пароль.
+   - Напоминания: Пользователи могут добавлять и просматривать напоминания.
 
-5. Напоминания:
-   - Реализуйте функционал для установки и управления напоминаниями. Это может включать создание напоминаний о платежах или других важных событиях.
+4. Финансовые ресурсы:
+   - Пользователи могут вводить и просматривать данные о доходах, расходах, еженедельных и ежемесячных доходах и расходах.
 
-6. Интерфейс :
-   - Подумайте о добавлении меню для возврата на уровень выше (например, из подменю "Финансовые Ресурсы" обратно в главное меню).
-   - Сделайте интерфейс более интуитивно понятным, возможно, добавив больше подсказок и инструкций для пользователей.
+5. Финансовые накопления:
+   - Пользователи могут добавлять новые накопления с деталями, просматривать существующие, редактировать или удалять их.
 
-7. Логирование и Отчеты:
-   - Включите логирование действий бота для отслеживания ошибок и улучшения функциональности.
-   - Добавьте возможность генерировать отчеты по финансовым данным за различные периоды.
+6. Настройки профиля:
+   - Пользователи могут обновлять свои профили (имя, возраст, биография, фото) и изменять пароль.
+
+7. Напоминания:
+   - Пользователи могут добавлять напоминания с заголовками, датами и временем, а также просматривать существующие напоминания.
+
+ Работа с JSON
+
+- Бот использует JSON-файлы для хранения данных о пользователях, накоплениях, профилях, финансовых данных и напоминаниях.
+- Методы `load_json` и `save_json` помогают загружать и сохранять данные из и в JSON-файлы.
+
 
 
 
 
 Translation into English
-1. Registration and Login:
-- Ensure passwords are stored securely. Consider using password hashing to improve security.
-- Add password recovery if needed.
 
-2. Financial Resources:
-- Add the ability to edit or delete data so users can correct errors.
-- Consider providing data visualization (graphs, charts) so users can better understand their finances.
+1. /start: Welcome message with buttons to register and login.
 
-3. Savings:
-- Implement the functionality to edit and delete savings so users can manage their goals.
-- Add savings goal reminders so users can track their progress.
+2. Register and Login:
+- Users can register by providing a username and password.
+- After registering, users can log in using their credentials.
 
-4. Profile:
-- Allow users to change their details (e.g. name, profile photo) through the bot.
-- Consider adding a user profile with additional information such as age or location.
+3. Main Menu:
+- Financial Resources: Users can add and view income, expense, and total. They can also save and view financial data.
+- Financial Savings: Users can add, view, edit, and delete savings cards.
+- Profile Settings: Users can update their profile information and change their password.
+- Reminders: Users can add and view reminders.
 
-5. Reminders:
-- Implement the functionality to set and manage reminders. This could include creating reminders for payments or other important events.
+4. Financial Resources:
+- Users can enter and view income, expense, weekly, and monthly income and expense data.
 
-6. Interface:
-- Consider adding a menu to return to the upper level (e.g. from the "Financial Resources" submenu back to the main menu).
-- Make the interface more intuitive, perhaps adding more hints and instructions for users.
+5. Financial Savings:
+- Users can add new savings with details, view existing ones, edit, or delete them.
 
-7. Logging and Reporting:
-- Enable logging of bot actions to track errors and improve functionality.
-- Add the ability to generate reports on financial data for different periods.
+6. Profile settings:
+- Users can update their profiles (name, age, bio, photo) and change password.
 
+7. Reminders:
+- Users can add reminders with titles, dates and times, and view existing reminders.
 
+Working with JSON
 
-
+- The bot uses JSON files to store data about users, savings, profiles, financial data and reminders.
+- The `load_json` and `save_json` methods help load and save data from and to JSON files.
 
 
 
