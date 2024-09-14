@@ -1,0 +1,38 @@
+{
+    "123456879": [
+        {
+            "goal": "Buy iPhone",
+            "amount_to_collect": 1200,
+            "amount_saved": 500,
+            "currency": "USD",
+            "date": "08\/11\/2024 12:25:45",
+            "photo": "https:\/\/content2.rozetka.com.ua\/goods\/images\/big\/364623674.jpg"
+        }
+    ],
+    "384290548": [
+        {
+            "goal": "Buy iPhone5",
+            "amount_to_collect": 1205,
+            "amount_saved": 500,
+            "currency": "USD",
+            "date": "11\/08\/2024 13:56:43",
+            "photo": "https:\/\/content2.rozetka.com.ua\/goods\/images\/big\/364623674.jpg"
+        },
+        {
+            "goal": "Vacation",
+            "amount_to_collect": 2000,
+            "amount_saved": 500,
+            "currency": "USD",
+            "photo_url": "https:\/\/i.citrus.world\/imgcache\/size_800\/uploads\/shop\/1\/6\/1699360202-709438-1.webp"
+        }
+    ],
+    "384290549": {
+        "photo": "https:\/\/hotline.ua\/img\/tx\/343\/3437030445.jpg",
+        "title": "500",
+        "goal": "500",
+        "currency": "UAH",
+        "saved": "500",
+        "date": "2024-09-26",
+        "creator": "Yura"
+    }
+}

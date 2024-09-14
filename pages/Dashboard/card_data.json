@@ -1,0 +1,23 @@
+{
+    "Yura": {
+        "password": "1231",
+        "cardData": {
+            "income": "5",
+            "expense": "5",
+            "weeklyEarnings": "5",
+            "monthlyEarnings": "5",
+            "monthlyExpenses": "5",
+            "yearlyEarnings": "5",
+            "yearlyExpenses": "5"
+        }
+    },
+    "384290548": {
+        "Incomes": 800.0,
+        "Expenses": 410.0,
+        "Weekly Earnings": 200.0,
+        "Monthly Earnings": 300.0,
+        "Monthly Expenses": 800.0,
+        "Yearly Earnings": 200.0,
+        "Yearly Expenses": 300.0
+    }
+}

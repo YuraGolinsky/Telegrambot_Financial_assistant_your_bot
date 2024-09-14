@@ -1,0 +1,178 @@
+/* ============== Modal ============== */
+.modalTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+#close-modal-btn {
+  color: var(--color-dark);
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+#close-modal-btn:hover {
+  color: var(--color-danger);
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background: var(--color-background);
+  padding: 2.4rem;
+  width: 90%;
+  max-width: 440px;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-50px);
+  transition: transform 0.4s ease;
+}
+
+.modal-overlay.active .modal {
+  transform: translateY(0);
+}
+
+.modal input {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-light);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  transition: border-color 0.3s ease;
+}
+
+.modal input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.modal input:last-child {
+  margin-top: 2rem;
+}
+
+.modal h2 {
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal small {
+  color: var(--color-info-dark);
+}
+
+.modal button.save {
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  width: 100%;
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal button.save:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.modal a#cancelTransaction {
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+  width: 45%;
+  background-color: var(--color-red);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal a#cancelTransaction:hover {
+  background-color: var(--color-red-dark);
+  transform: translateY(-2px);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-income-expense {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons-income-expense #incomeButton,
+.buttons-income-expense #expenseButton {
+  padding: 1rem 4rem;
+  border: 1px solid var(--color-light);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  width: 47%;
+  display: inline-flex;
+  justify-content: center;
+  color: var(--color-dark);
+  background-color: var(--color-background);
+}
+
+.buttons-income-expense #incomeButton:hover,
+.buttons-income-expense #expenseButton:hover {
+  background-color: var(--color-light);
+  transform: translateY(-2px);
+}
+
+.buttons-income-expense button.income {
+  background: var(--color-green);
+  color: white;
+}
+
+.buttons-income-expense button.expense {
+  background: var(--color-red);
+  color: white;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.addTransactionMobileButton #newTransactionMobile {
+  display: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}

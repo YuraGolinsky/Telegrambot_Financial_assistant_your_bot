@@ -1,0 +1,85 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+.modal .form-container {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #af7f7f;
+  width: 80%;
+  max-width: 300px;
+}
+.modal .close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .close-button:hover,
+.modal .close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Language Switcher Styles */
+.language-switch {
+margin-top: -700px; /* Добавляет отступ сверху */
+margin-left: 100px; /* Добавляет отступ слева, чтобы сместить блок вправо */
+margin-right: -100px;
+right: -620px;
+position: relative;
+width: 200px; /* Ширина переключателя, чтобы он помещался в отступе */
+height: 30px;
+background-color: #ff5100c4;
+border-radius: 30px;
+display: flex;
+align-items: center;
+padding: 5px;
+}
+
+.toggle-input {
+display: none;
+}
+
+.toggle-label {
+flex: 1;
+text-align: center;
+z-index: 2;
+cursor: pointer;
+font-size: 12px;
+color: #000;
+}
+
+.toggle-slider {
+position: absolute;
+top: 3px;
+left: 5px; /* Начальная позиция с отступом слева */
+width: 60px;
+height: 24px;
+background-color: var(--primary-color);
+border-radius: 30px;
+transition: 0.3s;
+z-index: 1;
+}
+
+#languageEn:checked ~ .toggle-slider {
+left: 5px; /* Позиция с отступом слева */
+}
+
+#languageUk:checked ~ .toggle-slider {
+left: 65px; /* Позиция с отступом слева */
+}
+
+#languageRu:checked ~ .toggle-slider {
+left: 125px; /* Позиция с отступом слева */
+}
+

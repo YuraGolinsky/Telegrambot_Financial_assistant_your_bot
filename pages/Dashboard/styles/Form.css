@@ -1,0 +1,130 @@
+/* Общие стили модального окна */
+.modal {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  animation: modalFadeIn 0.3s ease-in-out, modalSlideUp 0.3s ease-in-out;
+}
+
+/* Верхняя часть модального окна */
+.modal .modalTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  padding: 6px 12px;
+  border-radius: 6px 6px 0 0;
+}
+
+/* Кнопка закрытия модального окна */
+.modal .close-modal {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+.modal .close-modal:hover {
+  color: #ff0000;
+  transform: rotate(45deg);
+}
+
+/* Форма в модальном окне */
+.modal form {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8px;
+}
+
+/* Поля ввода */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.input-group label {
+  margin-bottom: 2px;
+}
+.input-group input,
+#dateInput {
+  width: 100%;
+  padding: 4px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.input-group input:focus,
+#dateInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Кнопки */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  grid-column: span 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Анимации */
+@keyframes modalFadeIn { 
+  from { opacity: 0; transform: scale(0.9); } 
+  to { opacity: 1; transform: scale(1); } 
+}
+@keyframes modalSlideUp { 
+  from { transform: translateY(20px); } 
+  to { transform: translateY(0); } 
+}
+
+/* Стили для календаря flatpickr */
+.flatpickr-calendar {
+  background: #fff;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 6px;
+}
+.flatpickr-days { background: #f0f0f0; }
+.flatpickr-day { color: #333; }
+.flatpickr-day.today {
+  background: #007bff;
+  color: #fff;
+  border-radius: 50%;
+}
+.flatpickr-monthDropdown-months,
+.flatpickr-yearDropdown-years {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  color: #007bff;
+  font-size: 16px;
+}
+.flatpickr-prev-month:hover,
+.flatpickr-next-month:hover { color: #0056b3; }
+
+/* Скрытие модального окна */
+.modal.hidden { animation: modalFadeOut 0.3s ease-in-out forwards; }

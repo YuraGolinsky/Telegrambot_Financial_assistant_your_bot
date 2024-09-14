@@ -1,0 +1,47 @@
+/* Общие стили для кнопок */
+button, .dropbtn {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: var(--font-size-medium);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, .dropbtn:hover {
+  background: #e66b00;
+}
+
+/* Стили для выпадающего меню */
+.import-export-dropdown {
+  position: relative;
+}
+
+.import-export-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 160px;
+}
+
+.import-export-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.import-export-dropdown .dropdown-content a {
+  color: var(--color-dark);
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.import-export-dropdown .dropdown-content a:hover {
+  background: var(--color-light);
+  color: var(--color-info-dark);
+}
